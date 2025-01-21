@@ -39,10 +39,7 @@ body {
 }
 
 .header h1 {
-  /* Non-accessible color */
   color: #edc84b;
-  /* color: #af8602; */
-
   text-transform: uppercase;
   text-align: center;
   font-size: 5.2rem;
@@ -179,10 +176,89 @@ body {
   background-color: #e9bb24;
 }
 
-/*
-SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
+/* *************** */
 
-FONT SIZE SYSTEM (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 /52 / 62 / 74 / 86 / 98
-*/
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .header h1 {
+    font-size: 4rem;
+  }
+  .menu h2 {
+    font-size: 2rem;
+  }
+  .menu > p {
+    font-size: 1.4rem;
+  }
+  .pizzas {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .pizza img {
+    width: 10rem;
+  }
+  .pizza h3 {
+    font-size: 1.8rem;
+  }
+  .pizza p {
+    font-size: 1.2rem;
+  }
+  .pizza span {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 3.5rem;
+  }
+  .menu h2 {
+    font-size: 1.8rem;
+  }
+  .menu > p {
+    font-size: 1.3rem;
+  }
+  .pizzas {
+    grid-template-columns: 1fr 1fr;
+  }
+  .pizza img {
+    width: 8rem;
+  }
+  .pizza h3 {
+    font-size: 1.6rem;
+  }
+  .pizza p {
+    font-size: 1.1rem;
+  }
+  .pizza span {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 2rem;
+  }
+  .header h1 {
+    font-size: 3rem;
+  }
+  .menu h2 {
+    font-size: 1.6rem;
+  }
+  .menu > p {
+    font-size: 1.2rem;
+  }
+  .pizzas {
+    grid-template-columns: 1fr;
+  }
+  .pizza img {
+    width: 7rem;
+  }
+  .pizza h3 {
+    font-size: 1.4rem;
+  }
+  .pizza p {
+    font-size: 1rem;
+  }
+  .pizza span {
+    font-size: 1.2rem;
+  }
+}
